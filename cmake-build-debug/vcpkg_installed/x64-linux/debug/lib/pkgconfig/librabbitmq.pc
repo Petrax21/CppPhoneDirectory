@@ -1,0 +1,13 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/../include
+
+Name: rabbitmq-c
+Description: An AMQP 0-9-1 client library
+Version: 0.14.0
+URL: https://github.com/alanxz/rabbitmq-c
+
+Libs: "-L${libdir}" -lrabbitmq -lrt -lssl -lcrypto
+Requires: 
+Cflags: "-I${includedir}"

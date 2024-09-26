@@ -1,0 +1,154 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/asio-x64-linux-1.30.2-d2fa8d80-ba24-4439-8e0c-9026df7682d7",
+  "name": "asio:x64-linux@1.30.2 0b80122996e15478b87ccc2a91c3137bf23656ecb871c7815938e434f18eae62",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-08-01-fd884a0d390d12783076341bd43d77c3a6a15658"
+    ],
+    "created": "2024-09-10T05:42:40Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "asio",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "1.30.2",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@17ce1a2d17d0cb0d50eb72c89a9e51f472ef31f4",
+      "homepage": "https://github.com/chriskohlhoff/asio",
+      "licenseConcluded": "BSL-1.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach.",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "asio:x64-linux",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "0b80122996e15478b87ccc2a91c3137bf23656ecb871c7815938e434f18eae62",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "BSL-1.0",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "chriskohlhoff/asio",
+      "downloadLocation": "git+https://github.com/chriskohlhoff/asio@asio-1-30-2",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "cfba1998d4f666156e751c4cab1e504441b368efbf344e22de30f8b983670a88d045d3ca82f197b95522a2026262274f93bc3061210781ce30c35c71a386ce6e"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/asio/17ce1a2d17d0cb0d50eb72c89a9e51f472ef31f4/vcpkg.json",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ee0756ae41c7a922b979a6aaefb0403b049f9f902ceee5e00710f50d1ae7b70b"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/asio/17ce1a2d17d0cb0d50eb72c89a9e51f472ef31f4/CMakeLists.txt",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5c61f823352ced476a6a9bfaf2344fb13e57b5e366f6a7253facdbe0140814e8"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/asio/17ce1a2d17d0cb0d50eb72c89a9e51f472ef31f4/asio-config.cmake",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "76460d64c810477d808946dbd5ca26ddd766363f07918751dc2caddb20e6ef1d"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/asio/17ce1a2d17d0cb0d50eb72c89a9e51f472ef31f4/portfile.cmake",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8a01a6b0e74d7f040b7ec967b1ba3420a340d53e74802c204eb79668cfa7709f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/librabbitmq-x64-linux-0.14.0-41f25daf-2fc5-4ebd-a24e-980fecb89973",
+  "name": "librabbitmq:x64-linux@0.14.0 59af0e524cba090813f7dc2d1f27bda9c071d1b4f66a7442a21ccb81c5e719df",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-08-01-fd884a0d390d12783076341bd43d77c3a6a15658"
+    ],
+    "created": "2024-09-23T21:32:33Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "librabbitmq",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "0.14.0",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@02f81a2c57c6f0c36f4f504c85fa23897c566f8e",
+      "homepage": "https://github.com/alanxz/rabbitmq-c",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "A C-language AMQP client library for use with v2.0+ of the RabbitMQ broker.",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "librabbitmq:x64-linux",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "59af0e524cba090813f7dc2d1f27bda9c071d1b4f66a7442a21ccb81c5e719df",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "alanxz/rabbitmq-c",
+      "downloadLocation": "git+https://github.com/alanxz/rabbitmq-c@v0.14.0",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "18cb429bcfa457e359128bf458c8b9f60b1c929a8ca3a8206f40d6390d7d4c6f4c5140eb7e9ab7b401d035fc48324cbe963d058100ab65ef3faba59e7f95607e"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/librabbitmq/02f81a2c57c6f0c36f4f504c85fa23897c566f8e/vcpkg.json",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8237c3ad3018ae03a9e502778f0632f7cc0ed904bee9d66785ee3aec36a309f7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/librabbitmq/02f81a2c57c6f0c36f4f504c85fa23897c566f8e/portfile.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f9b8f2448598529f3f0c2d434c46f0e058f55950d12786e0f7682b5178f98c79"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/librabbitmq/02f81a2c57c6f0c36f4f504c85fa23897c566f8e/fix-uwpwarning.patch",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0cda7eefbdf2028a53560b8f56c472f849d948db2aa407510ead679cc9a508b6"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

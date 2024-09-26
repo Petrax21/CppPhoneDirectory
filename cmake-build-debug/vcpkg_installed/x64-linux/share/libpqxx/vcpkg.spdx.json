@@ -1,0 +1,176 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/libpqxx-x64-linux-7.9.2-b1a6fcba-d029-4e09-9e75-230db7563333",
+  "name": "libpqxx:x64-linux@7.9.2 87a6da5b528e7be13893a528c3805636a8ef9c8ab62078eb525bc5f7f7eff624",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-08-01-fd884a0d390d12783076341bd43d77c3a6a15658"
+    ],
+    "created": "2024-09-11T07:16:16Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-4"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-4",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "libpqxx",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "7.9.2",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@e7a918510cbcca1b6cd6f4cf72611ff796bc20af",
+      "homepage": "https://www.postgresql.org/",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "The official C++ client API for PostgreSQL",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "libpqxx:x64-linux",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "87a6da5b528e7be13893a528c3805636a8ef9c8ab62078eb525bc5f7f7eff624",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "jtv/libpqxx",
+      "downloadLocation": "git+https://github.com/jtv/libpqxx@7.9.2",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "f4035b1d976580f0ca101d484940f18a5af8299e249b754098c6c4bbe8198a855013112965300f7d978ca127b75547f2e2f4fb567b77114f010392952f0ed642"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libpqxx/e7a918510cbcca1b6cd6f4cf72611ff796bc20af/config-public-compiler.h.in",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8bf064e37d4bea8066d1bb73a2b89b37ace3b9293176c0a323a5bce80f490d78"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libpqxx/e7a918510cbcca1b6cd6f4cf72611ff796bc20af/vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "942762e236034f077fbec06b5f7aba4b324376a933de96551754ac2e29bbabe4"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libpqxx/e7a918510cbcca1b6cd6f4cf72611ff796bc20af/fix_build_with_vs2017.patch",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "082858fae080cd45b2ba5f15efef14996f1160990c9f2b68b3fcdd765c09d1a7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libpqxx/e7a918510cbcca1b6cd6f4cf72611ff796bc20af/portfile.cmake",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a593893ee3f81e934c6192f445929df13537b48496485313345d7dde1653e8c2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libpqxx/e7a918510cbcca1b6cd6f4cf72611ff796bc20af/config-internal-compiler.h.in",
+      "SPDXID": "SPDXRef-file-4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a8601086a54966d331c22a1ca85c73c6d53f94750c9d6dfb10c29bb2bfb5c4f2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

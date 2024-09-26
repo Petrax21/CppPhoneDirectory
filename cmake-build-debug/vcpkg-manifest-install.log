@@ -1,0 +1,56 @@
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+All requested packages are currently installed.
+Total install time: 716 ns
+amqpcpp provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(amqpcpp CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE amqpcpp)
+
+amqpcpp provides pkg-config modules:
+
+  # AMQP-CPP is a C++ library for communicating with a RabbitMQ message broker
+  amqpcpp
+
+crow provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Crow CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Crow::Crow asio::asio)
+
+libpqxx provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(libpqxx CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE libpqxx::pqxx)
+
+libpqxx provides pkg-config modules:
+
+  # C++ client API for the PostgreSQL database management system.
+  libpqxx
+
+librabbitmq provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(rabbitmq-c CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE rabbitmq::rabbitmq-static)
+
+librabbitmq provides pkg-config modules:
+
+  # An AMQP 0-9-1 client library
+  librabbitmq
+
+The package nlohmann-json provides CMake targets:
+
+    find_package(nlohmann_json CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE nlohmann_json::nlohmann_json)
+
+The package nlohmann-json can be configured to not provide implicit conversions via a custom triplet file:
+
+    set(nlohmann-json_IMPLICIT_CONVERSIONS OFF)
+
+For more information, see the docs here:
+    
+    https://json.nlohmann.me/api/macros/json_use_implicit_conversions/
+
