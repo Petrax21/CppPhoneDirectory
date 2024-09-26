@@ -2,7 +2,7 @@
 #include <pqxx/pqxx>
 #include <rabbitmq-c/amqp.h>
 #include <rabbitmq-c/tcp_socket.h>
-
+#include "api-gateway/gateway.cpp"
 
 #include "service.hpp"
 
@@ -37,6 +37,8 @@ void sendToRabbitMQ(const std::string& message) {
 int main() {
     crow::SimpleApp app;
 
+    routeApiGateway(app);
+
     CROW_ROUTE(app, "/add_contact")
     .methods(crow::HTTPMethod::POST)
     ([&](const crow::request& req){
@@ -65,3 +67,6 @@ int main() {
 
     app.port(8080).multithreaded().run();
 }
+
+
+// root config

@@ -53,9 +53,17 @@ build CMakeFiles/PhoneDirectoryBackcpp.dir/main.cpp.o: CXX_COMPILER__PhoneDirect
   DEFINES = -DAMQP_STATIC -DASIO_STANDALONE
   DEP_FILE = CMakeFiles/PhoneDirectoryBackcpp.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/domain/contact -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
+  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/domain/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
   OBJECT_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir
   OBJECT_FILE_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir
+
+build CMakeFiles/PhoneDirectoryBackcpp.dir/api-gateway/gateway.cpp.o: CXX_COMPILER__PhoneDirectoryBackcpp_unscanned_Debug /home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway/gateway.cpp || cmake_object_order_depends_target_PhoneDirectoryBackcpp
+  DEFINES = -DAMQP_STATIC -DASIO_STANDALONE
+  DEP_FILE = CMakeFiles/PhoneDirectoryBackcpp.dir/api-gateway/gateway.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/domain/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
+  OBJECT_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir/api-gateway
 
 
 # =============================================================================
@@ -65,7 +73,7 @@ build CMakeFiles/PhoneDirectoryBackcpp.dir/main.cpp.o: CXX_COMPILER__PhoneDirect
 #############################################
 # Link the executable PhoneDirectoryBackcpp
 
-build PhoneDirectoryBackcpp: CXX_EXECUTABLE_LINKER__PhoneDirectoryBackcpp_Debug CMakeFiles/PhoneDirectoryBackcpp.dir/main.cpp.o | vcpkg_installed/x64-linux/debug/lib/libpqxx-7.9.a vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a vcpkg_installed/x64-linux/debug/lib/librabbitmq.a vcpkg_installed/x64-linux/debug/lib/libpq.a vcpkg_installed/x64-linux/debug/lib/libpgport.a vcpkg_installed/x64-linux/debug/lib/libpgcommon.a vcpkg_installed/x64-linux/debug/lib/libssl.a vcpkg_installed/x64-linux/debug/lib/libcrypto.a
+build PhoneDirectoryBackcpp: CXX_EXECUTABLE_LINKER__PhoneDirectoryBackcpp_Debug CMakeFiles/PhoneDirectoryBackcpp.dir/main.cpp.o CMakeFiles/PhoneDirectoryBackcpp.dir/api-gateway/gateway.cpp.o | vcpkg_installed/x64-linux/debug/lib/libpqxx-7.9.a vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a vcpkg_installed/x64-linux/debug/lib/librabbitmq.a vcpkg_installed/x64-linux/debug/lib/libpq.a vcpkg_installed/x64-linux/debug/lib/libpgport.a vcpkg_installed/x64-linux/debug/lib/libpgcommon.a vcpkg_installed/x64-linux/debug/lib/libssl.a vcpkg_installed/x64-linux/debug/lib/libcrypto.a
   FLAGS = -g
   LINK_LIBRARIES = vcpkg_installed/x64-linux/debug/lib/libpqxx-7.9.a  vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a  vcpkg_installed/x64-linux/debug/lib/librabbitmq.a  vcpkg_installed/x64-linux/debug/lib/libpq.a  vcpkg_installed/x64-linux/debug/lib/libpgport.a  vcpkg_installed/x64-linux/debug/lib/libpgcommon.a  vcpkg_installed/x64-linux/debug/lib/libssl.a  vcpkg_installed/x64-linux/debug/lib/libcrypto.a  -ldl  -lrt
   OBJECT_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir
