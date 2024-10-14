@@ -12,33 +12,6 @@ Multi-Arch: same
 Abi: d48c4de719adf967df9f3747d5f05650ff876b8de6ce3882659af2b60b01cd1e
 Status: install ok installed
 
-Package: asio
-Version: 1.30.2
-Depends: vcpkg-cmake, vcpkg-cmake-config
-Architecture: x64-linux
-Multi-Arch: same
-Abi: 0b80122996e15478b87ccc2a91c3137bf23656ecb871c7815938e434f18eae62
-Description: Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach.
-Status: install ok installed
-
-Package: crow
-Version: 1.2.0
-Depends: asio, vcpkg-cmake, vcpkg-cmake-config
-Architecture: x64-linux
-Multi-Arch: same
-Abi: 187bef07b3637f4c874c2aa726a91183796940c7c741d0d285f30525ecbd6cf7
-Description: Very fast and easy to use C++ micro web framework
-Status: install ok installed
-
-Package: zlib
-Version: 1.3.1
-Depends: vcpkg-cmake
-Architecture: x64-linux
-Multi-Arch: same
-Abi: 55e4cae7299fd539f8a28cb8c76b533e82a845800216521c5fffacc2077a2e28
-Description: A compression library
-Status: install ok installed
-
 Package: vcpkg-cmake-get-vars
 Version: 2023-12-31
 Depends: vcpkg-cmake
@@ -48,13 +21,76 @@ Abi: 8dc65e09a9b680a202ce2b15adc4f1b0e15303c1893a468b96c2ee5dba9f7ec2
 Status: install ok installed
 
 Package: openssl
-Version: 3.3.1
+Version: 3.3.2
 Port-Version: 1
 Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 196e8607f84fad301b1e315e1fb2c3bff395f37d8026268401b9e678401c724b
+Abi: 0f0278833e44957bb842732e1624b15511a47ce3e4d459a4bf2093ce69f5e432
 Description: OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
+Status: install ok installed
+
+Package: amqpcpp
+Version: 4.3.26
+Depends: openssl, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 198bc70b5e28b6f7506512942d5ab91ad5bdc06fa9a52b7c0d3b674519743428
+Description: AMQP-CPP is a C++ library for communicating with a RabbitMQ message broker
+Status: install ok installed
+
+Package: asio
+Version: 1.31.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: aaa3d3b8a049481ae828bf2f6ca2bbc4832e1104134a5b23c66a60b8beb1247e
+Description: Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach.
+Status: install ok installed
+
+Package: crow
+Version: 1.2.0
+Depends: asio, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 7d7b2e85698a15d34fd30035b224b425629012277915a7a372faa80115f64975
+Description: Very fast and easy to use C++ micro web framework
+Status: install ok installed
+
+Package: libev
+Version: 4.33
+Port-Version: 3
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 2d8d52ddc18233ae47e66cd0a7a7f89dfd2f38785c8ad94222f26018d299dc90
+Description: libev is a high-performance event loop/event model with lots of features.
+Status: install ok installed
+
+Package: libtracepoint
+Version: 1.4.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: ddccb4eba71d7ebb64903fed3a026e28f064b33435bb94228006b9056ef0afce
+Description: C/C++ interface for generating Linux Tracepoints
+Status: install ok installed
+
+Package: libeventheader-tracepoint
+Version: 1.4.0
+Depends: libtracepoint, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 3163c6cc034d0f8ec6f219d2eceb0ead7c3d613a07da5b9e4b06282a9bb9d435
+Description: C/C++ interface for generating EventHeader-encoded Linux Tracepoints
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 55e4cae7299fd539f8a28cb8c76b533e82a845800216521c5fffacc2077a2e28
+Description: A compression library
 Status: install ok installed
 
 Package: lz4
@@ -71,7 +107,7 @@ Version: 16.4
 Depends: vcpkg-cmake-get-vars
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 36609bd0188c4638b525e767e147cd3da7a2768ae1c3abfb5d041407277dc04c
+Abi: 2d5350c15aa8fc50ca026a96dfbb2cf1b8dacda06a5cde87751d70d0b285561f
 Description: The official database access API of postgresql
 Default-Features: lz4, openssl, zlib
 Status: install ok installed
@@ -105,8 +141,17 @@ Version: 7.9.2
 Depends: libpq, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 87a6da5b528e7be13893a528c3805636a8ef9c8ab62078eb525bc5f7f7eff624
+Abi: dcf7c57f837ea7ea9edcc241c1359a6bfecaf401c544c675506b6d32579708c6
 Description: The official C++ client API for PostgreSQL
+Status: install ok installed
+
+Package: librabbitmq
+Version: 0.14.0
+Depends: openssl, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: b069e5f560329f2235337b0a9e4e4a3f3ccf387558380ebf06285791680ac802
+Description: A C-language AMQP client library for use with v2.0+ of the RabbitMQ broker.
 Status: install ok installed
 
 Package: nlohmann-json
@@ -117,23 +162,5 @@ Architecture: x64-linux
 Multi-Arch: same
 Abi: 6dd6b4f6c169fe93a6786d1e9a252f84cce74070b6dcfba992c52cfe0d2b131b
 Description: JSON for Modern C++
-Status: install ok installed
-
-Package: librabbitmq
-Version: 0.14.0
-Depends: openssl, vcpkg-cmake, vcpkg-cmake-config
-Architecture: x64-linux
-Multi-Arch: same
-Abi: 59af0e524cba090813f7dc2d1f27bda9c071d1b4f66a7442a21ccb81c5e719df
-Description: A C-language AMQP client library for use with v2.0+ of the RabbitMQ broker.
-Status: install ok installed
-
-Package: amqpcpp
-Version: 4.3.26
-Depends: openssl, vcpkg-cmake, vcpkg-cmake-config
-Architecture: x64-linux
-Multi-Arch: same
-Abi: b227df325daceba5b2e29ac55747b0546f9fe6c4cb5a9935f3b77ea43a5cb0b3
-Description: AMQP-CPP is a C++ library for communicating with a RabbitMQ message broker
 Status: install ok installed
 

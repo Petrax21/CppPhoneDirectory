@@ -1,0 +1,39 @@
+{
+  "name" : "phonedirectorybackcpp",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "29b2ea2d4b6197e66ef346e62ccbba35b55b7de5",
+  "dependencies" : [ {
+    "name" : "amqpcpp",
+    "version>=" : "4.3.26"
+  }, {
+    "name" : "asio",
+    "version>=" : "1.30.2"
+  }, {
+    "name" : "crow",
+    "version>=" : "1.2.0"
+  }, {
+    "name" : "libev",
+    "version>=" : "4.33#3"
+  }, {
+    "name" : "libeventheader-tracepoint",
+    "version>=" : "1.4.0"
+  }, {
+    "name" : "librabbitmq",
+    "version>=" : "0.14.0"
+  }, {
+    "name" : "libtracepoint",
+    "version>=" : "1.4.0"
+  }, {
+    "name" : "openssl",
+    "version>=" : "3.3.1#1"
+  }, {
+    "name" : "vcpkg-cmake-config",
+    "version>=" : "2024-05-23"
+  }, {
+    "name" : "vcpkg-cmake-get-vars",
+    "version>=" : "2023-12-31"
+  }, {
+    "name" : "vcpkg-cmake",
+    "version>=" : "2024-04-23"
+  } ]
+}

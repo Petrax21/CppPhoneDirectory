@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/amqpcpp-x64-linux-4.3.26-4ee54132-3b66-4b2f-8399-718f6af89534",
-  "name": "amqpcpp:x64-linux@4.3.26 b227df325daceba5b2e29ac55747b0546f9fe6c4cb5a9935f3b77ea43a5cb0b3",
+  "documentNamespace": "https://spdx.org/spdxdocs/amqpcpp-x64-linux-4.3.26-943b15c0-7d3d-4bc1-867f-cd118b671780",
+  "name": "amqpcpp:x64-linux@4.3.26 198bc70b5e28b6f7506512942d5ab91ad5bdc06fa9a52b7c0d3b674519743428",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2024-08-01-fd884a0d390d12783076341bd43d77c3a6a15658"
     ],
-    "created": "2024-09-13T06:29:33Z"
+    "created": "2024-09-13T06:33:03Z"
   },
   "relationships": [
     {
@@ -68,7 +68,7 @@
       "name": "amqpcpp",
       "SPDXID": "SPDXRef-port",
       "versionInfo": "4.3.26",
-      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/amqpcpp",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@bebd378cad1feeea8bf45184a105efb18bb59354",
       "homepage": "https://github.com/CopernicaMarketingSoftware/AMQP-CPP",
       "licenseConcluded": "Apache-2.0",
       "licenseDeclared": "NOASSERTION",
@@ -79,7 +79,7 @@
     {
       "name": "amqpcpp:x64-linux",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "b227df325daceba5b2e29ac55747b0546f9fe6c4cb5a9935f3b77ea43a5cb0b3",
+      "versionInfo": "198bc70b5e28b6f7506512942d5ab91ad5bdc06fa9a52b7c0d3b674519743428",
       "downloadLocation": "NONE",
       "licenseConcluded": "Apache-2.0",
       "licenseDeclared": "NOASSERTION",
@@ -103,7 +103,7 @@
   ],
   "files": [
     {
-      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/ports/amqpcpp/vcpkg.json",
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/vcpkg.json",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -115,7 +115,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/ports/amqpcpp/find-openssl.patch",
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/find-openssl.patch",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -127,7 +127,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/ports/amqpcpp/portfile.cmake",
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/portfile.cmake",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -139,7 +139,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/ports/amqpcpp/fix-max_min_macros.patch",
+      "fileName": ".//home/mustafa/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/amqpcpp/bebd378cad1feeea8bf45184a105efb18bb59354/fix-max_min_macros.patch",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {

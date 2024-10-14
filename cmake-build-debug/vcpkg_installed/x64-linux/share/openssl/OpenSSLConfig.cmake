@@ -42,6 +42,8 @@ unset(_ossl_undefined_targets)
 get_filename_component(_ossl_prefix "${CMAKE_CURRENT_LIST_FILE}" PATH)
 get_filename_component(_ossl_prefix "${_ossl_prefix}" PATH)
 get_filename_component(_ossl_prefix "${_ossl_prefix}" PATH)
+get_filename_component(_ossl_prefix "${_ossl_prefix}" PATH)
+get_filename_component(_ossl_prefix "${_ossl_prefix}" PATH)
 
 if(_ossl_prefix STREQUAL "/")
   set(_ossl_prefix "")
@@ -73,8 +75,8 @@ set(OPENSSL_VERSION_FIX "${OpenSSL_VERSION_PATCH}")
 set(OPENSSL_FOUND YES)
 
 # Directories and names
-set(OPENSSL_INCLUDE_DIR "${_ossl_prefix}/include")
 set(OPENSSL_LIBRARY_DIR "${_ossl_prefix}/lib")
+set(OPENSSL_INCLUDE_DIR "${_ossl_prefix}/include")
 set(OPENSSL_ENGINES_DIR "${_ossl_prefix}/lib/engines-3")
 set(OPENSSL_MODULES_DIR "${_ossl_prefix}/lib/ossl-modules")
 set(OPENSSL_RUNTIME_DIR "${_ossl_prefix}/bin")

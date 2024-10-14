@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/libpq-x64-linux-16.4-13122c2d-a6da-4966-9332-6c20aa70ec85",
-  "name": "libpq:x64-linux@16.4 36609bd0188c4638b525e767e147cd3da7a2768ae1c3abfb5d041407277dc04c",
+  "documentNamespace": "https://spdx.org/spdxdocs/libpq-x64-linux-16.4-5c5d7251-a9b0-480d-b6df-5422d00d47b7",
+  "name": "libpq:x64-linux@16.4 2d5350c15aa8fc50ca026a96dfbb2cf1b8dacda06a5cde87751d70d0b285561f",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2024-08-01-fd884a0d390d12783076341bd43d77c3a6a15658"
     ],
-    "created": "2024-09-11T07:04:59Z"
+    "created": "2024-10-13T23:40:43Z"
   },
   "relationships": [
     {
@@ -229,7 +229,7 @@
     {
       "name": "libpq:x64-linux",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "36609bd0188c4638b525e767e147cd3da7a2768ae1c3abfb5d041407277dc04c",
+      "versionInfo": "2d5350c15aa8fc50ca026a96dfbb2cf1b8dacda06a5cde87751d70d0b285561f",
       "downloadLocation": "NONE",
       "licenseConcluded": "PostgreSQL",
       "licenseDeclared": "NOASSERTION",

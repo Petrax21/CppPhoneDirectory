@@ -1,7 +1,13 @@
 Detecting compiler hash for triplet x64-linux...
 Compiler found: /usr/bin/c++
 All requested packages are currently installed.
-Total install time: 582 ns
+Total install time: 431 ns
+openssl is compatible with built-in CMake targets:
+
+  find_package(OpenSSL REQUIRED)
+  target_link_libraries(main PRIVATE OpenSSL::SSL)
+  target_link_libraries(main PRIVATE OpenSSL::Crypto)
+
 amqpcpp provides CMake targets:
 
   # this is heuristically generated, and may not be correct
@@ -13,11 +19,41 @@ amqpcpp provides pkg-config modules:
   # AMQP-CPP is a C++ library for communicating with a RabbitMQ message broker
   amqpcpp
 
+asio provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(asio CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE asio::asio)
+
 crow provides CMake targets:
 
   # this is heuristically generated, and may not be correct
   find_package(Crow CONFIG REQUIRED)
   target_link_libraries(main PRIVATE Crow::Crow asio::asio)
+
+libev provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(unofficial-libev CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE unofficial::libev::libev)
+
+libtracepoint provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(tracepoint CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE tracepoint)
+
+  find_package(tracepoint-headers CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE tracepoint-headers)
+
+libeventheader-tracepoint provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(eventheader-headers CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE eventheader-headers)
+
+  find_package(eventheader-tracepoint CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE eventheader-tracepoint)
 
 libpqxx provides CMake targets:
 

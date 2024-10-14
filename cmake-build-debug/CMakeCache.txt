@@ -17,6 +17,24 @@
 //Path to a file.
 ASIO_INCLUDE_DIR:PATH=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
 
+//Value Computed by CMake
+Aggregator_BINARY_DIR:STATIC=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/aggregator
+
+//Value Computed by CMake
+Aggregator_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Aggregator_SOURCE_DIR:STATIC=/home/mustafa/Codes/PhoneDirectoryBackcpp/aggregator
+
+//Value Computed by CMake
+ApiGateway_BINARY_DIR:STATIC=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/api-gateway
+
+//Value Computed by CMake
+ApiGateway_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ApiGateway_SOURCE_DIR:STATIC=/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -295,9 +313,6 @@ PostgreSQL_pgport_LIBRARY_DEBUG:FILEPATH=/home/mustafa/Codes/PhoneDirectoryBackc
 //Path to a library.
 PostgreSQL_pgport_LIBRARY_RELEASE:FILEPATH=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/lib/libpgport.a
 
-//The directory containing a CMake configuration file for RabbitMQ.
-RabbitMQ_DIR:PATH=RabbitMQ_DIR-NOTFOUND
-
 //Automatically copy dependencies into the output directory for
 // executables.
 VCPKG_APPLOCAL_DEPS:BOOL=ON
@@ -365,6 +380,18 @@ _VCPKG_INSTALLED_DIR:PATH=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-
 
 //The directory containing a CMake configuration file for amqpcpp.
 amqpcpp_DIR:PATH=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/share/amqpcpp
+
+//Value Computed by CMake
+contact_BINARY_DIR:STATIC=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/microservice/contact
+
+//Value Computed by CMake
+contact_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+contact_SOURCE_DIR:STATIC=/home/mustafa/Codes/PhoneDirectoryBackcpp/microservice/contact
+
+//The directory containing a CMake configuration file for libev.
+libev_DIR:PATH=libev_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for libpqxx.
 libpqxx_DIR:PATH=/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/share/libpqxx
@@ -486,7 +513,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -534,7 +561,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenSSL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/debug/lib/libcrypto.a][/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include][c ][v3.3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/debug/lib/libcrypto.a][/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include][c ][v3.3.2()]
 //Details about finding PostgreSQL
 FIND_PACKAGE_MESSAGE_DETAILS_PostgreSQL:INTERNAL=[/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/debug/lib/libpq.a][/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include][c ][v16.4()]
 //Details about finding Threads

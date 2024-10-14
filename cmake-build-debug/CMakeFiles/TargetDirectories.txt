@@ -1,3 +1,12 @@
 /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/CMakeFiles/PhoneDirectoryBackcpp.dir
 /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/api-gateway/CMakeFiles/ApiGateway.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/api-gateway/CMakeFiles/edit_cache.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/api-gateway/CMakeFiles/rebuild_cache.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/aggregator/CMakeFiles/Aggregator.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/aggregator/CMakeFiles/edit_cache.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/aggregator/CMakeFiles/rebuild_cache.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/microservice/contact/CMakeFiles/contact.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/microservice/contact/CMakeFiles/edit_cache.dir
+/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/microservice/contact/CMakeFiles/rebuild_cache.dir

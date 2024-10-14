@@ -9,22 +9,40 @@ find_package(amqpcpp REQUIRED)
 find_package(rabbitmq-c CONFIG REQUIRED)
 
 set(CMAKE_TOOLCHAIN_FILE "/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
-set(RabbitMQ_DIR "/path/to/rabbitmq-c")
+set(RabbitMQ_DIR
+        rabbitmq/rabbit-mq-adapter.hpp
+        rabbitmq/rabbit-mq-connection-handler.hpp
+)
 
 
 include_directories(${CMAKE_SOURCE_DIR}/application
-        ${CMAKE_SOURCE_DIR}/domain/contact
+        ${CMAKE_SOURCE_DIR}/microservice/contact
         ${CMAKE_SOURCE_DIR}/api-gateway
+        ${CMAKE_SOURCE_DIR}/rabbitmq
 )
 
-# Uygulama dosyaları
+add_subdirectory(
+        api-gateway
+)
+
+add_subdirectory(
+        aggregator
+)
+
+add_subdirectory(
+        microservice/contact
+)
+
 add_executable(${PROJECT_NAME} main.cpp
-        application/service.hpp
-        domain/contact/contact.hpp
-        domain/contact/contact-factory.hpp
-        domain/contact/contact-repository.hpp
-        domain/contact/contact-service.hpp
-        api-gateway/gateway.cpp)
+        microservice/contact/application/service.hpp
+        microservice/contact/domain/contact.hpp
+        microservice/contact/domain/contact-factory.hpp
+        microservice/contact/domain/contact-repository.hpp
+        microservice/contact/domain/contact-service.hpp
+        api-gateway/gateway.cpp
+        rabbitmq/rabbit-mq-connection-handler.hpp
+        rabbitmq/rabbit-mq-adapter.hpp
+)
 
 target_link_libraries(${PROJECT_NAME}
         PRIVATE Crow::Crow

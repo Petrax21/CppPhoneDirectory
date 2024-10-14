@@ -53,7 +53,7 @@ build CMakeFiles/PhoneDirectoryBackcpp.dir/main.cpp.o: CXX_COMPILER__PhoneDirect
   DEFINES = -DAMQP_STATIC -DASIO_STANDALONE
   DEP_FILE = CMakeFiles/PhoneDirectoryBackcpp.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/domain/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
+  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/microservice/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -I/home/mustafa/Codes/PhoneDirectoryBackcpp/rabbitmq -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
   OBJECT_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir
   OBJECT_FILE_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir
 
@@ -61,7 +61,7 @@ build CMakeFiles/PhoneDirectoryBackcpp.dir/api-gateway/gateway.cpp.o: CXX_COMPIL
   DEFINES = -DAMQP_STATIC -DASIO_STANDALONE
   DEP_FILE = CMakeFiles/PhoneDirectoryBackcpp.dir/api-gateway/gateway.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/domain/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
+  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/microservice/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -I/home/mustafa/Codes/PhoneDirectoryBackcpp/rabbitmq -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
   OBJECT_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir
   OBJECT_FILE_DIR = CMakeFiles/PhoneDirectoryBackcpp.dir/api-gateway
 
@@ -106,7 +106,191 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/mustafa/Codes/PhoneDirectoryBackcpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ApiGateway
+
+
+#############################################
+# Order-only phony target for ApiGateway
+
+build cmake_object_order_depends_target_ApiGateway: phony || .
+
+build api-gateway/CMakeFiles/ApiGateway.dir/gateway.cpp.o: CXX_COMPILER__ApiGateway_unscanned_Debug /home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway/gateway.cpp || cmake_object_order_depends_target_ApiGateway
+  DEFINES = -DAMQP_STATIC -DASIO_STANDALONE
+  DEP_FILE = api-gateway/CMakeFiles/ApiGateway.dir/gateway.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/microservice/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -I/home/mustafa/Codes/PhoneDirectoryBackcpp/rabbitmq -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
+  OBJECT_DIR = api-gateway/CMakeFiles/ApiGateway.dir
+  OBJECT_FILE_DIR = api-gateway/CMakeFiles/ApiGateway.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ApiGateway
+
+
+#############################################
+# Link the executable api-gateway/ApiGateway
+
+build api-gateway/ApiGateway: CXX_EXECUTABLE_LINKER__ApiGateway_Debug api-gateway/CMakeFiles/ApiGateway.dir/gateway.cpp.o | vcpkg_installed/x64-linux/debug/lib/libpqxx-7.9.a vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a vcpkg_installed/x64-linux/debug/lib/librabbitmq.a vcpkg_installed/x64-linux/debug/lib/libpq.a vcpkg_installed/x64-linux/debug/lib/libpgport.a vcpkg_installed/x64-linux/debug/lib/libpgcommon.a vcpkg_installed/x64-linux/debug/lib/libssl.a vcpkg_installed/x64-linux/debug/lib/libcrypto.a
+  FLAGS = -g
+  LINK_LIBRARIES = vcpkg_installed/x64-linux/debug/lib/libpqxx-7.9.a  vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a  vcpkg_installed/x64-linux/debug/lib/librabbitmq.a  vcpkg_installed/x64-linux/debug/lib/libpq.a  vcpkg_installed/x64-linux/debug/lib/libpgport.a  vcpkg_installed/x64-linux/debug/lib/libpgcommon.a  vcpkg_installed/x64-linux/debug/lib/libssl.a  vcpkg_installed/x64-linux/debug/lib/libcrypto.a  -ldl  -lrt
+  OBJECT_DIR = api-gateway/CMakeFiles/ApiGateway.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = api-gateway/ApiGateway
+  TARGET_PDB = ApiGateway.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build api-gateway/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/api-gateway && /snap/clion/296/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build api-gateway/edit_cache: phony api-gateway/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build api-gateway/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/api-gateway && /snap/clion/296/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/mustafa/Codes/PhoneDirectoryBackcpp -B/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build api-gateway/rebuild_cache: phony api-gateway/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/mustafa/Codes/PhoneDirectoryBackcpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Aggregator
+
+
+#############################################
+# Order-only phony target for Aggregator
+
+build cmake_object_order_depends_target_Aggregator: phony || .
+
+build aggregator/CMakeFiles/Aggregator.dir/aggregator.cpp.o: CXX_COMPILER__Aggregator_unscanned_Debug /home/mustafa/Codes/PhoneDirectoryBackcpp/aggregator/aggregator.cpp || cmake_object_order_depends_target_Aggregator
+  DEFINES = -DAMQP_STATIC -DASIO_STANDALONE
+  DEP_FILE = aggregator/CMakeFiles/Aggregator.dir/aggregator.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/mustafa/Codes/PhoneDirectoryBackcpp/application -I/home/mustafa/Codes/PhoneDirectoryBackcpp/microservice/contact -I/home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway -I/home/mustafa/Codes/PhoneDirectoryBackcpp/rabbitmq -isystem /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/vcpkg_installed/x64-linux/include
+  OBJECT_DIR = aggregator/CMakeFiles/Aggregator.dir
+  OBJECT_FILE_DIR = aggregator/CMakeFiles/Aggregator.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Aggregator
+
+
+#############################################
+# Link the executable aggregator/Aggregator
+
+build aggregator/Aggregator: CXX_EXECUTABLE_LINKER__Aggregator_Debug aggregator/CMakeFiles/Aggregator.dir/aggregator.cpp.o | vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a vcpkg_installed/x64-linux/debug/lib/librabbitmq.a vcpkg_installed/x64-linux/debug/lib/libssl.a vcpkg_installed/x64-linux/debug/lib/libcrypto.a
+  FLAGS = -g
+  LINK_LIBRARIES = vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a  vcpkg_installed/x64-linux/debug/lib/librabbitmq.a  vcpkg_installed/x64-linux/debug/lib/libssl.a  vcpkg_installed/x64-linux/debug/lib/libcrypto.a  -ldl  -lrt
+  OBJECT_DIR = aggregator/CMakeFiles/Aggregator.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = aggregator/Aggregator
+  TARGET_PDB = Aggregator.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build aggregator/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/aggregator && /snap/clion/296/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build aggregator/edit_cache: phony aggregator/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build aggregator/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/aggregator && /snap/clion/296/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/mustafa/Codes/PhoneDirectoryBackcpp -B/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build aggregator/rebuild_cache: phony aggregator/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/mustafa/Codes/PhoneDirectoryBackcpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target contact
+
+
+#############################################
+# Order-only phony target for contact
+
+build cmake_object_order_depends_target_contact: phony || .
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target contact
+
+
+#############################################
+# Link the executable microservice/contact/contact
+
+build microservice/contact/contact: CXX_EXECUTABLE_LINKER__contact_Debug | vcpkg_installed/x64-linux/debug/lib/libpqxx-7.9.a vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a vcpkg_installed/x64-linux/debug/lib/librabbitmq.a vcpkg_installed/x64-linux/debug/lib/libpq.a vcpkg_installed/x64-linux/debug/lib/libpgport.a vcpkg_installed/x64-linux/debug/lib/libpgcommon.a vcpkg_installed/x64-linux/debug/lib/libssl.a vcpkg_installed/x64-linux/debug/lib/libcrypto.a
+  FLAGS = -g
+  LINK_LIBRARIES = vcpkg_installed/x64-linux/debug/lib/libpqxx-7.9.a  vcpkg_installed/x64-linux/debug/lib/libamqpcpp.a  vcpkg_installed/x64-linux/debug/lib/librabbitmq.a  vcpkg_installed/x64-linux/debug/lib/libpq.a  vcpkg_installed/x64-linux/debug/lib/libpgport.a  vcpkg_installed/x64-linux/debug/lib/libpgcommon.a  vcpkg_installed/x64-linux/debug/lib/libssl.a  vcpkg_installed/x64-linux/debug/lib/libcrypto.a  -ldl  -lrt
+  OBJECT_DIR = microservice/contact/CMakeFiles/contact.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = microservice/contact/contact
+  TARGET_PDB = contact.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build microservice/contact/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/microservice/contact && /snap/clion/296/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build microservice/contact/edit_cache: phony microservice/contact/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build microservice/contact/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/microservice/contact && /snap/clion/296/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/mustafa/Codes/PhoneDirectoryBackcpp -B/home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build microservice/contact/rebuild_cache: phony microservice/contact/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build Aggregator: phony aggregator/Aggregator
+
+build ApiGateway: phony api-gateway/ApiGateway
+
+build contact: phony microservice/contact/contact
 
 # =============================================================================
 # Folder targets.
@@ -116,7 +300,28 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug
 
-build all: phony PhoneDirectoryBackcpp
+build all: phony PhoneDirectoryBackcpp api-gateway/all aggregator/all microservice/contact/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/aggregator
+
+build aggregator/all: phony aggregator/Aggregator
+
+# =============================================================================
+
+#############################################
+# Folder: /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/api-gateway
+
+build api-gateway/all: phony api-gateway/ApiGateway
+
+# =============================================================================
+
+#############################################
+# Folder: /home/mustafa/Codes/PhoneDirectoryBackcpp/cmake-build-debug/microservice/contact
+
+build microservice/contact/all: phony microservice/contact/contact
 
 # =============================================================================
 # Built-in targets
@@ -125,14 +330,14 @@ build all: phony PhoneDirectoryBackcpp
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/mustafa/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake /home/mustafa/Codes/PhoneDirectoryBackcpp/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/vcpkg.json /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindOpenSSL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPostgreSQL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-debug.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-release.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowTargets.cmake vcpkg_installed/x64-linux/share/crow/Findasio.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config-version.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-debug.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-release.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonTargets.cmake vcpkg_installed/x64-linux/share/openssl/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/postgresql/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config-version.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-debug.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-release.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets.cmake
+build build.ninja: RERUN_CMAKE | /home/mustafa/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake /home/mustafa/Codes/PhoneDirectoryBackcpp/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/aggregator/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/microservice/contact/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/vcpkg.json /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindOpenSSL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPostgreSQL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-debug.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-release.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowTargets.cmake vcpkg_installed/x64-linux/share/crow/Findasio.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config-version.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-debug.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-release.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonTargets.cmake vcpkg_installed/x64-linux/share/openssl/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/postgresql/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config-version.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-debug.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-release.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/mustafa/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake /home/mustafa/Codes/PhoneDirectoryBackcpp/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/vcpkg.json /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindOpenSSL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPostgreSQL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-debug.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-release.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowTargets.cmake vcpkg_installed/x64-linux/share/crow/Findasio.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config-version.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-debug.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-release.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonTargets.cmake vcpkg_installed/x64-linux/share/openssl/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/postgresql/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config-version.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-debug.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-release.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets.cmake: phony
+build /home/mustafa/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake /home/mustafa/Codes/PhoneDirectoryBackcpp/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/aggregator/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/api-gateway/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/microservice/contact/CMakeLists.txt /home/mustafa/Codes/PhoneDirectoryBackcpp/vcpkg.json /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindOpenSSL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPkgConfig.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPostgreSQL.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-debug.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig-release.cmake vcpkg_installed/x64-linux/share/amqpcpp/amqpcppConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowConfig.cmake vcpkg_installed/x64-linux/share/crow/CrowTargets.cmake vcpkg_installed/x64-linux/share/crow/Findasio.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config-version.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-config.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-debug.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets-release.cmake vcpkg_installed/x64-linux/share/libpqxx/libpqxx-targets.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonTargets.cmake vcpkg_installed/x64-linux/share/openssl/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/postgresql/vcpkg-cmake-wrapper.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config-version.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-c-config.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-debug.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets-release.cmake vcpkg_installed/x64-linux/share/rabbitmq-c/rabbitmq-targets.cmake: phony
 
 
 #############################################
