@@ -1,5 +1,20 @@
 # PhoneDirectoryBackcpp
 
+```mermaid
+sequenceDiagram
+    participant Client as Client
+    participant API as API Gateway
+    participant AGG as Aggregator
+    participant MS as Microservice - Contact
+
+    Client->>API: Request
+    API->>AGG: API Gateway Request
+    AGG->>MS: Contact.addContact()
+    MS-->>AGG: Response from Microservice - Contact
+    AGG-->>API: Aggregated Response
+    API-->>Client: API Gateway Response
+```
+
 **├── api-gateway  
 │ └── gateway.cpp  
 │ └── CMakeLists.txt  
